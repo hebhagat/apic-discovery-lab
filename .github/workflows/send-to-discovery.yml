@@ -23,11 +23,11 @@ jobs:
       id: discover-apis
       with:
         api_host: tj-isa-2-420eb34f056ae68f3969289d61f61851-0000.jp-tok.containers.appdomain.cloud
+        provider_org: tech-jam-16
+        api_files: APIfolder/photos.yaml
         platform_api_prefix: api-manage-456a0068-platform-api-tech-jam-apic
         INSECURE_SKIP_TLS_VERIFY: true 
-        provider_org: tech-jam-16
         api_key: secrets.apicApikey_student16_key
-        api_files: ${{ env.API_FILES }}
         api_folders: ${{ env.API_FOLDERS }}
         resync_check: ${{ true }}
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
