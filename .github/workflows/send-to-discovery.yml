@@ -27,9 +27,9 @@ jobs:
         INSECURE_SKIP_TLS_VERIFY: true 
         provider_org: tech-jam-16
         api_key: secrets.apicApikey_student16_key
-        #api_files: ${{ env.API_FILES }}
-        #api_folders: ${{ env.API_FOLDERS }}
-        #resync_check: ${{ true }}
+        api_files: ${{ env.API_FILES }}
+        api_folders: ${{ env.API_FOLDERS }}
+        resync_check: ${{ true }}
         git_diff: ${{ steps.difference-output.outputs.action_updates }}
         insecure_skip_tls_verify: ${{ env.INSECURE_SKIP_TLS_VERIFY }}
     - name: Display the action-result
